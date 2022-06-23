@@ -1,0 +1,129 @@
+
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+:root{
+  --ff-main: 'Josefin Sans', sans-serif;
+  --ff-secondary: 'Bebas Neue';
+
+  --clr-bg-color: rgb(0, 0, 0);
+  --clr-accent: #FCCC83;
+  --clr-outline:#ffffff;
+  --clr-other: #F5F2EF;
+  --clr-text-main: #000;
+  
+  --fs-h1: 5rem;
+  --fs-h2: 3rem;
+  --fs-body: 2.5rem;
+}
+
+p{font-family: var(--ff-main);font-size: var(--fs-body);}
+h1{font-family: var(--ff-secondary); font-size: var(--fs-h1);}
+h2{font-family: var(--ff-secondary); font-size: var(--fs-h2);}
+
+
+body{
+  text-shadow: 3px 0 var(--clr-accent);
+  font-family: var(--ff-main);
+  font-size: var(--fs-body);
+  height: 100vh;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: var(--clr-bg-color);
+  animation: fadeIn 3.5s;
+}
+
+header{
+  width: auto;
+  height: auto;
+  position: relative;
+}
+
+header h1{
+  width: 99%;
+  padding: 100px 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+header img{
+  width: 1000px;
+  /* center image */
+  margin-top: 24px; 
+  margin-left: 10px;
+}
+
+.keys_wrapper{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.keys{
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin:0px;
+  list-style-type: none;
+}
+
+.key{
+  background-color: var(--clr-other);
+  border: 5px dashed var(--clr-accent);
+  height: 130px;
+  width: 130px;
+  margin: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  transition: all 0.07s;
+}
+
+.playing{
+  transform:scale(1.1);
+  border-color: var(--clr-accent);
+  box-shadow: 0 0 15px var(--clr-accent);
+}
+
+.sound{
+  font-size: 1rem;
+  text-transform: uppercase;
+  display: flex;
+  letter-spacing: 1px;
+}
+
+/* Fade in animation*/
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    margin-top: 10rem;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Stopt text from being highlighted */
+.noselect{
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+  supported by Chrome, Edge, Opera and Firefox */
+}

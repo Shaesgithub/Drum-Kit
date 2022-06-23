@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DRUMKIT</title>
+
+  <link rel="stylesheet" type="text/css" href="style.css" media="all">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>DRUM KIT</h1>
+    <img src="https://cdn.glitch.global/d3bda573-d66c-4d88-9301-8ce51bb42028/Untitled_Artwork%208.gif?v=1648046210804" alt="a gif of a border"/>
+  </header>
+
+  <!-- HOME ROW KEYS -->
+  <div class="keys_wrapper noselect">
+    <div class="keys">
+      
+      <div data-key="65" class="key">
+        <kdb><span class="keyStrike">A</span></kbd>
+        <span class="sound">OPEN</span>
+      </div>
+
+      <div data-key="83" class="key">
+        <kdb><span class="keyStrike">S</span></kbd>
+        <span class="sound">RIDE</span>
+      </div>
+
+      <div data-key="68" class="key">
+        <kdb><span class="keyStrike">D</span></kbd>
+        <span class="sound">CRASH</span>
+      </div>
+
+      <div data-key="70" class="key">
+        <kdb><span class="keyStrike">F</span></kbd>
+        <span class="sound">DRUM</span>
+      </div>
+
+      <div data-key="71" class="key">
+        <kdb><span class="keyStrike">G</span></kbd>
+        <span class="sound">RIDE 2</span>
+      </div>
+
+      <div data-key="72" class="key">
+        <kdb><span class="keyStrike">H</span></kbd>
+        <span class="sound">SNARE</span>
+      </div>
+
+      <div data-key="74" class="key">
+        <kdb><span class="keyStrike">J</span></kbd>
+        <span class="sound">TINK</span>
+      </div>
+
+      <div data-key="75" class="key">
+        <kdb><span class="keyStrike">K</span></kbd>
+        <span class="sound">SNARE 2</span>
+      </div>
+
+      <div data-key="76" class="key">
+        <kdb><span class="keyStrike">L</span></kbd>
+        <span class="sound">DRUM 2</span>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- HOME ROW SOUNDS -->
+  <audio data-key="65" src="https://cdn.glitch.global/d3bda573-d66c-4d88-9301-8ce51bb42028/boom.wav?v=1655979633022"></audio>
+  <audio data-key="83" src="https://cdn.glitch.global/d3bda573-d66c-4d88-9301-8ce51bb42028/ride.wav?v=1655979630773"></audio>
+  <audio data-key="68" src="https://cdn.glitch.global/d3bda573-d66c-4d88-9301-8ce51bb42028/clap.wav?v=1655979633045"></audio>
+  <audio data-key="70" src="https://cdn.glitch.com/7b676a4e-ad9f-46d0-a2d1-dc0bb5cda0d3%2Ftom-4.mp3?v=1605879165789"></audio>
+  <audio data-key="71" src="https://cdn.glitch.com/7b676a4e-ad9f-46d0-a2d1-dc0bb5cda0d3%2Fcrash.mp3?v=1605879137404"></audio>
+  <audio data-key="72" src="https://cdn.glitch.global/d3bda573-d66c-4d88-9301-8ce51bb42028/hihat.wav?v=1655979633155"></audio>
+  <audio data-key="74" src="https://cdn.glitch.global/d3bda573-d66c-4d88-9301-8ce51bb42028/tink.wav?v=1655979628846"></audio>
+  <audio data-key="75" src="https://cdn.glitch.global/d3bda573-d66c-4d88-9301-8ce51bb42028/snare.wav?v=1655979629109"></audio>
+  <audio data-key="76" src="https://cdn.glitch.global/d3bda573-d66c-4d88-9301-8ce51bb42028/tom.wav?v=1655979621920"></audio>
+
+  <!-- JS -->
+  <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
